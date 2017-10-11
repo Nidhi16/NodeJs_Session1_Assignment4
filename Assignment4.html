@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- NodeJs_Session1_Assignment4. Write a IIFE that prints AGE, NAME AND CITY of the person." -->
 <html>
   <head>
     <title>NodeJs Session1 Assignment4</title>
@@ -12,11 +13,14 @@
       // An IIFE function
       (function (age, name, city) {
         console.log("Name of the person is : " + name);
-        document.getElementById('name').innerHTML = "Name of the person is : "+name;
+        // Set innerText property of the p tag under name id
+        document.getElementById('name').innerText = "Name of the person is : " + name;
         console.log("Age of the person is : ", age);
-        document.getElementById('age').innerHTML = "Age of the person is : "+age;
+        // Set innerText property of the p tag under age id
+        document.getElementById('age').innerText = "Age of the person is : " + age;
         console.log("City of the person is : " + city);
-        document.getElementById('city').innerHTML = "City of the person is : "+city; 
+        // Set innerText property of the p tag under city id
+        document.getElementById('city').innerText = "City of the person is : " + city; 
       }(23, "John", "Dublin"));
     </script>
   </body>
