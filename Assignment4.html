@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NodeJs Session1 Assignment4</title>
+  </head>
+  <body>
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="city"></p>
+    <!-- Internal JS -->
+    <script>
+      // An IIFE function
+      (function (age, name, city) {
+        console.log("Name of the person is : " + name);
+        document.getElementById('name').innerHTML = "Name of the person is : "+name;
+        console.log("Age of the person is : ", age);
+        document.getElementById('age').innerHTML = "Age of the person is : "+age;
+        console.log("City of the person is : " + city);
+        document.getElementById('city').innerHTML = "City of the person is : "+city; 
+      }(23, "John", "Dublin"));
+    </script>
+  </body>
+</html>
